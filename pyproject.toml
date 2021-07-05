@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "android_info"
+bundle = "net.bryanskitchen"
+version = "0.0.1"
+url = "https://bryanskitchen.net/android_info"
+license = "BSD license"
+author = 'Bryan Wood'
+author_email = "bryan@bryanskitchen.net"
+
+[tool.briefcase.app.android_info]
+formal_name = "android_info"
+description = "Application to quickly inspectt android information"
+icon = "src/android_info/resources/android_info"
+sources = ['src/android_info']
+requires = []
+
+
+[tool.briefcase.app.android_info.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.android_info.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.android_info.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.android_info.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.android_info.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.5
+Name: android_info
+Formal-Name: android_info
+App-ID: net.bryanskitchen.android_info
+Version: 0.0.1
+Home-page: https://bryanskitchen.net/android_info
+Author: Bryan Wood
+Author-email: bryan@bryanskitchen.net
+Summary: Application to quickly inspectt android information
